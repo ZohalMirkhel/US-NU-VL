@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Phone Number Validator</title>
+  </head>
+  <body>
+    <div class="login-form">
+      <h1>Telephone Number Validator</h1>
+      <div class="container">
+        <div class="main">
+          <div class="content">
+            <h2>Enter Your Phone Number</h2>
+            <form id="phone-form" action="#" method="post">
+              <div class="select-box">
+                <div class="select" id="dropdown">
+                  <div class="selected">Select Country</div>
+                  <div class="options-container">
+                    <div class="option" data-value="AF"><span class="flag-icon flag-icon-af"></span> Afghanistan</div>
+                    <div class="option" data-value="AL"><span class="flag-icon flag-icon-al"></span> Albania</div>
+                    <div class="option" data-value="DZ"><span class="flag-icon flag-icon-dz"></span> Algeria</div>
+                    <div class="option" data-value="AS"><span class="flag-icon flag-icon-as"></span> American Samoa</div>
+                    <div class="option" data-value="AD"><span class="flag-icon flag-icon-ad"></span> Andorra</div>
+                    <div class="option" data-value="AO"><span class="flag-icon flag-icon-ao"></span> Angola</div>
+                    <div class="option" data-value="AI"><span class="flag-icon flag-icon-ai"></span> Anguilla</div>
+                    <div class="option" data-value="AQ"><span class="flag-icon flag-icon-aq"></span> Antarctica</div>
+                    <div class="option" data-value="AG"><span class="flag-icon flag-icon-ag"></span> Antigua and Barbuda</div>
+                    <div class="option" data-value="AR"><span class="flag-icon flag-icon-ar"></span> Argentina</div>
+                    <div class="option" data-value="AM"><span class="flag-icon flag-icon-am"></span> Armenia</div>
+                    <div class="option" data-value="AW"><span class="flag-icon flag-icon-aw"></span> Aruba</div>
+                    <div class="option" data-value="AU"><span class="flag-icon flag-icon-au"></span> Australia</div>
+                    <div class="option" data-value="AT"><span class="flag-icon flag-icon-at"></span> Austria</div>
+                    <div class="option" data-value="AZ"><span class="flag-icon flag-icon-az"></span> Azerbaijan</div>
+                    <div class="option" data-value="BS"><span class="flag-icon flag-icon-bs"></span> Bahamas</div>
+                    <div class="option" data-value="BH"><span class="flag-icon flag-icon-bh"></span> Bahrain</div>
+                    <div class="option" data-value="BD"><span class="flag-icon flag-icon-bd"></span> Bangladesh</div>
+                    <div class="option" data-value="BB"><span class="flag-icon flag-icon-bb"></span> Barbados</div>
+                    <div class="option" data-value="BY"><span class="flag-icon flag-icon-by"></span> Belarus</div>
+                    <div class="option" data-value="BE"><span class="flag-icon flag-icon-be"></span> Belgium</div>
+                    <div class="option" data-value="BZ"><span class="flag-icon flag-icon-bz"></span> Belize</div>
+                    <div class="option" data-value="BJ"><span class="flag-icon flag-icon-bj"></span> Benin</div>
+                    <div class="option" data-value="BM"><span class="flag-icon flag-icon-bm"></span> Bermuda</div>
+                    <div class="option" data-value="BT"><span class="flag-icon flag-icon-bt"></span> Bhutan</div>
+                    <div class="option" data-value="BO"><span class="flag-icon flag-icon-bo"></span> Bolivia</div>
+                    <div class="option" data-value="BQ"><span class="flag-icon flag-icon-bq"></span> Bonaire, Sint Eustatius and Saba</div>
+                    <div class="option" data-value="BA"><span class="flag-icon flag-icon-ba"></span> Bosnia and Herzegovina</div>
+                    <div class="option" data-value="BW"><span class="flag-icon flag-icon-bw"></span> Botswana</div>
+                    <div class="option" data-value="BR"><span class="flag-icon flag-icon-br"></span> Brazil</div>
+                    <div class="option" data-value="IO"><span class="flag-icon flag-icon-io"></span> British Indian Ocean Territory</div>
+                    <div class="option" data-value="BN"><span class="flag-icon flag-icon-bn"></span> Brunei Darussalam</div>
+                    <div class="option" data-value="BG"><span class="flag-icon flag-icon-bg"></span> Bulgaria</div>
+                    <div class="option" data-value="BF"><span class="flag-icon flag-icon-bf"></span> Burkina Faso</div>
+                    <div class="option" data-value="BI"><span class="flag-icon flag-icon-bi"></span> Burundi</div>
+                    <div class="option" data-value="CV"><span class="flag-icon flag-icon-cv"></span> Cabo Verde</div>
+                    <div class="option" data-value="KH"><span class="flag-icon flag-icon-kh"></span> Cambodia</div>
+                    <div class="option" data-value="CM"><span class="flag-icon flag-icon-cm"></span> Cameroon</div>
+                    <div class="option" data-value="CA"><span class="flag-icon flag-icon-ca"></span> Canada</div>
+                    <div class="option" data-value="KY"><span class="flag-icon flag-icon-ky"></span> Cayman Islands</div>
+                    <div class="option" data-value="CF"><span class="flag-icon flag-icon-cf"></span> Central African Republic</div>
+                    <div class="option" data-value="TD"><span class="flag-icon flag-icon-td"></span> Chad</div>
+                    <div class="option" data-value="CL"><span class="flag-icon flag-icon-cl"></span> Chile</div>
+                    <div class="option" data-value="CN"><span class="flag-icon flag-icon-cn"></span> China</div>
+                    <div class="option" data-value="CX"><span class="flag-icon flag-icon-cx"></span> Christmas Island</div>
+                    <div class="option" data-value="CC"><span class="flag-icon flag-icon-cc"></span> Cocos (Keeling) Islands</div>
+                    <div class="option" data-value="CO"><span class="flag-icon flag-icon-co"></span> Colombia</div>
+                    <div class="option" data-value="KM"><span class="flag-icon flag-icon-km"></span> Comoros</div>
+                    <div class="option" data-value="CG"><span class="flag-icon flag-icon-cg"></span> Congo</div>
+                    <div class="option" data-value="CD"><span class="flag-icon flag-icon-cd"></span> Congo, Democratic Republic of the</div>
+                    <div class="option" data-value="CK"><span class="flag-icon flag-icon-ck"></span> Cook Islands</div>
+                    <div class="option" data-value="CR"><span class="flag-icon flag-icon-cr"></span> Costa Rica</div>
+                    <div class="option" data-value="HR"><span class="flag-icon flag-icon-hr"></span> Croatia</div>
+                    <div class="option" data-value="CU"><span class="flag-icon flag-icon-cu"></span> Cuba</div>
+                    <div class="option" data-value="CW"><span class="flag-icon flag-icon-cw"></span> Curaçao</div>
+                    <div class="option" data-value="CY"><span class="flag-icon flag-icon-cy"></span> Cyprus</div>
+                    <div class="option" data-value="CZ"><span class="flag-icon flag-icon-cz"></span> Czechia</div>
+                    <div class="option" data-value="DK"><span class="flag-icon flag-icon-dk"></span> Denmark</div>
+                    <div class="option" data-value="DJ"><span class="flag-icon flag-icon-dj"></span> Djibouti</div>
+                    <div class="option" data-value="DM"><span class="flag-icon flag-icon-dm"></span> Dominica</div>
+                    <div class="option" data-value="DO"><span class="flag-icon flag-icon-do"></span> Dominican Republic</div>
+                    <div class="option" data-value="EC"><span class="flag-icon flag-icon-ec"></span> Ecuador</div>
+                    <div class="option" data-value="EG"><span class="flag-icon flag-icon-eg"></span> Egypt</div>
+                    <div class="option" data-value="SV"><span class="flag-icon flag-icon-sv"></span> El Salvador</div>
+                    <div class="option" data-value="GQ"><span class="flag-icon flag-icon-gq"></span> Equatorial Guinea</div>
+                    <div class="option" data-value="ER"><span class="flag-icon flag-icon-er"></span> Eritrea</div>
+                    <div class="option" data-value="EE"><span class="flag-icon flag-icon-ee"></span> Estonia</div>
+                    <div class="option" data-value="SZ"><span class="flag-icon flag-icon-sz"></span> Eswatini</div>
+                    <div class="option" data-value="ET"><span class="flag-icon flag-icon-et"></span> Ethiopia</div>
+                    <div class="option" data-value="FK"><span class="flag-icon flag-icon-fk"></span> Falkland Islands (Malvinas)</div>
+                    <div class="option" data-value="FO"><span class="flag-icon flag-icon-fo"></span> Faroe Islands</div>
+                    <div class="option" data-value="FJ"><span class="flag-icon flag-icon-fj"></span> Fiji</div>
+                    <div class="option" data-value="FI"><span class="flag-icon flag-icon-fi"></span> Finland</div>
+                    <div class="option" data-value="FR"><span class="flag-icon flag-icon-fr"></span> France</div>
+                    <div class="option" data-value="GF"><span class="flag-icon flag-icon-gf"></span> French Guiana</div>
+                    <div class="option" data-value="PF"><span class="flag-icon flag-icon-pf"></span> French Polynesia</div>
+                    <div class="option" data-value="GA"><span class="flag-icon flag-icon-ga"></span> Gabon</div>
+                    <div class="option" data-value="GM"><span class="flag-icon flag-icon-gm"></span> Gambia</div>
+                    <div class="option" data-value="GE"><span class="flag-icon flag-icon-ge"></span> Georgia</div>
+                    <div class="option" data-value="DE"><span class="flag-icon flag-icon-de"></span> Germany</div>
+                    <div class="option" data-value="GH"><span class="flag-icon flag-icon-gh"></span> Ghana</div>
+                    <div class="option" data-value="GI"><span class="flag-icon flag-icon-gi"></span> Gibraltar</div>
+                    <div class="option" data-value="GR"><span class="flag-icon flag-icon-gr"></span> Greece</div>
+                    <div class="option" data-value="GL"><span class="flag-icon flag-icon-gl"></span> Greenland</div>
+                    <div class="option" data-value="GD"><span class="flag-icon flag-icon-gd"></span> Grenada</div>
+                    <div class="option" data-value="GP"><span class="flag-icon flag-icon-gp"></span> Guadeloupe</div>
+                    <div class="option" data-value="GU"><span class="flag-icon flag-icon-gu"></span> Guam</div>
+                    <div class="option" data-value="GT"><span class="flag-icon flag-icon-gt"></span> Guatemala</div>
+                    <div class="option" data-value="GG"><span class="flag-icon flag-icon-gg"></span> Guernsey</div>
+                    <div class="option" data-value="GN"><span class="flag-icon flag-icon-gn"></span> Guinea</div>
+                    <div class="option" data-value="GW"><span class="flag-icon flag-icon-gw"></span> Guinea-Bissau</div>
+                    <div class="option" data-value="GY"><span class="flag-icon flag-icon-gy"></span> Guyana</div>
+                    <div class="option" data-value="HT"><span class="flag-icon flag-icon-ht"></span> Haiti</div>
+                    <div class="option" data-value="HN"><span class="flag-icon flag-icon-hn"></span> Honduras</div>
+                    <div class="option" data-value="HK"><span class="flag-icon flag-icon-hk"></span> Hong Kong</div>
+                    <div class="option" data-value="HU"><span class="flag-icon flag-icon-hu"></span> Hungary</div>
+                    <div class="option" data-value="IS"><span class="flag-icon flag-icon-is"></span> Iceland</div>
+                    <div class="option" data-value="IN"><span class="flag-icon flag-icon-in"></span> India</div>
+                    <div class="option" data-value="ID"><span class="flag-icon flag-icon-id"></span> Indonesia</div>
+                    <div class="option" data-value="IR"><span class="flag-icon flag-icon-ir"></span> Iran, Islamic Republic of</div>
+                    <div class="option" data-value="IQ"><span class="flag-icon flag-icon-iq"></span> Iraq</div>
+                    <div class="option" data-value="IE"><span class="flag-icon flag-icon-ie"></span> Ireland</div>
+                    <div class="option" data-value="IM"><span class="flag-icon flag-icon-im"></span> Isle of Man</div>
+                    <div class="option" data-value="IL"><span class="flag-icon flag-icon-il"></span> Israel</div>
+                    <div class="option" data-value="IT"><span class="flag-icon flag-icon-it"></span> Italy</div>
+                    <div class="option" data-value="JM"><span class="flag-icon flag-icon-jm"></span> Jamaica</div>
+                    <div class="option" data-value="JP"><span class="flag-icon flag-icon-jp"></span> Japan</div>
+                    <div class="option" data-value="JE"><span class="flag-icon flag-icon-je"></span> Jersey</div>
+                    <div class="option" data-value="JO"><span class="flag-icon flag-icon-jo"></span> Jordan</div>
+                    <div class="option" data-value="KZ"><span class="flag-icon flag-icon-kz"></span> Kazakhstan</div>
+                    <div class="option" data-value="KE"><span class="flag-icon flag-icon-ke"></span> Kenya</div>
+                    <div class="option" data-value="KI"><span class="flag-icon flag-icon-ki"></span> Kiribati</div>
+                    <div class="option" data-value="KP"><span class="flag-icon flag-icon-kp"></span> Korea, Democratic People's Republic of</div>
+                    <div class="option" data-value="KR"><span class="flag-icon flag-icon-kr"></span> Korea, Republic of</div>
+                    <div class="option" data-value="KW"><span class="flag-icon flag-icon-kw"></span> Kuwait</div>
+                    <div class="option" data-value="KG"><span class="flag-icon flag-icon-kg"></span> Kyrgyzstan</div>
+                    <div class="option" data-value="LA"><span class="flag-icon flag-icon-la"></span> Lao People's Democratic Republic</div>
+                    <div class="option" data-value="LV"><span class="flag-icon flag-icon-lv"></span> Latvia</div>
+                    <div class="option" data-value="LB"><span class="flag-icon flag-icon-lb"></span> Lebanon</div>
+                    <div class="option" data-value="LS"><span class="flag-icon flag-icon-ls"></span> Lesotho</div>
+                    <div class="option" data-value="LR"><span class="flag-icon flag-icon-lr"></span> Liberia</div>
+                    <div class="option" data-value="LY"><span class="flag-icon flag-icon-ly"></span> Libya</div>
+                    <div class="option" data-value="LI"><span class="flag-icon flag-icon-li"></span> Liechtenstein</div>
+                    <div class="option" data-value="LT"><span class="flag-icon flag-icon-lt"></span> Lithuania</div>
+                    <div class="option" data-value="LU"><span class="flag-icon flag-icon-lu"></span> Luxembourg</div>
+                    <div class="option" data-value="MO"><span class="flag-icon flag-icon-mo"></span> Macao</div>
+                    <div class="option" data-value="MG"><span class="flag-icon flag-icon-mg"></span> Madagascar</div>
+                    <div class="option" data-value="MW"><span class="flag-icon flag-icon-mw"></span> Malawi</div>
+                    <div class="option" data-value="MY"><span class="flag-icon flag-icon-my"></span> Malaysia</div>
+                    <div class="option" data-value="MV"><span class="flag-icon flag-icon-mv"></span> Maldives</div>
+                    <div class="option" data-value="ML"><span class="flag-icon flag-icon-ml"></span> Mali</div>
+                    <div class="option" data-value="MT"><span class="flag-icon flag-icon-mt"></span> Malta</div>
+                    <div class="option" data-value="MH"><span class="flag-icon flag-icon-mh"></span> Marshall Islands</div>
+                    <div class="option" data-value="MQ"><span class="flag-icon flag-icon-mq"></span> Martinique</div>
+                    <div class="option" data-value="MR"><span class="flag-icon flag-icon-mr"></span> Mauritania</div>
+                    <div class="option" data-value="MU"><span class="flag-icon flag-icon-mu"></span> Mauritius</div>
+                    <div class="option" data-value="YT"><span class="flag-icon flag-icon-yt"></span> Mayotte</div>
+                    <div class="option" data-value="MX"><span class="flag-icon flag-icon-mx"></span> Mexico</div>
+                    <div class="option" data-value="FM"><span class="flag-icon flag-icon-fm"></span> Micronesia, Federated States of</div>
+                    <div class="option" data-value="MD"><span class="flag-icon flag-icon-md"></span> Moldova, Republic of</div>
+                    <div class="option" data-value="MC"><span class="flag-icon flag-icon-mc"></span> Monaco</div>
+                    <div class="option" data-value="MN"><span class="flag-icon flag-icon-mn"></span> Mongolia</div>
+                    <div class="option" data-value="ME"><span class="flag-icon flag-icon-me"></span> Montenegro</div>
+                    <div class="option" data-value="MS"><span class="flag-icon flag-icon-ms"></span> Montserrat</div>
+                    <div class="option" data-value="MA"><span class="flag-icon flag-icon-ma"></span> Morocco</div>
+                    <div class="option" data-value="MZ"><span class="flag-icon flag-icon-mz"></span> Mozambique</div>
+                    <div class="option" data-value="MM"><span class="flag-icon flag-icon-mm"></span> Myanmar</div>
+                    <div class="option" data-value="NA"><span class="flag-icon flag-icon-na"></span> Namibia</div>
+                    <div class="option" data-value="NR"><span class="flag-icon flag-icon-nr"></span> Nauru</div>
+                    <div class="option" data-value="NP"><span class="flag-icon flag-icon-np"></span> Nepal</div>
+                    <div class="option" data-value="NL"><span class="flag-icon flag-icon-nl"></span> Netherlands</div>
+                    <div class="option" data-value="NC"><span class="flag-icon flag-icon-nc"></span> New Caledonia</div>
+                    <div class="option" data-value="NZ"><span class="flag-icon flag-icon-nz"></span> New Zealand</div>
+                    <div class="option" data-value="NI"><span class="flag-icon flag-icon-ni"></span> Nicaragua</div>
+                    <div class="option" data-value="NE"><span class="flag-icon flag-icon-ne"></span> Niger</div>
+                    <div class="option" data-value="NG"><span class="flag-icon flag-icon-ng"></span> Nigeria</div>
+                    <div class="option" data-value="NU"><span class="flag-icon flag-icon-nu"></span> Niue</div>
+                    <div class="option" data-value="NF"><span class="flag-icon flag-icon-nf"></span> Norfolk Island</div>
+                    <div class="option" data-value="MK"><span class="flag-icon flag-icon-mk"></span> North Macedonia</div>
+                    <div class="option" data-value="MP"><span class="flag-icon flag-icon-mp"></span> Northern Mariana Islands</div>
+                    <div class="option" data-value="NO"><span class="flag-icon flag-icon-no"></span> Norway</div>
+                    <div class="option" data-value="OM"><span class="flag-icon flag-icon-om"></span> Oman</div>
+                    <div class="option" data-value="PK"><span class="flag-icon flag-icon-pk"></span> Pakistan</div>
+                    <div class="option" data-value="PW"><span class="flag-icon flag-icon-pw"></span> Palau</div>
+                    <div class="option" data-value="PS"><span class="flag-icon flag-icon-ps"></span> Palestine, State of</div>
+                    <div class="option" data-value="PA"><span class="flag-icon flag-icon-pa"></span> Panama</div>
+                    <div class="option" data-value="PG"><span class="flag-icon flag-icon-pg"></span> Papua New Guinea</div>
+                    <div class="option" data-value="PY"><span class="flag-icon flag-icon-py"></span> Paraguay</div>
+                    <div class="option" data-value="PE"><span class="flag-icon flag-icon-pe"></span> Peru</div>
+                    <div class="option" data-value="PH"><span class="flag-icon flag-icon-ph"></span> Philippines</div>
+                    <div class="option" data-value="PN"><span class="flag-icon flag-icon-pn"></span> Pitcairn</div>
+                    <div class="option" data-value="PL"><span class="flag-icon flag-icon-pl"></span> Poland</div>
+                    <div class="option" data-value="PT"><span class="flag-icon flag-icon-pt"></span> Portugal</div>
+                    <div class="option" data-value="PR"><span class="flag-icon flag-icon-pr"></span> Puerto Rico</div>
+                    <div class="option" data-value="QA"><span class="flag-icon flag-icon-qa"></span> Qatar</div>
+                    <div class="option" data-value="RO"><span class="flag-icon flag-icon-ro"></span> Romania</div>
+                    <div class="option" data-value="RU"><span class="flag-icon flag-icon-ru"></span> Russian Federation</div>
+                    <div class="option" data-value="RW"><span class="flag-icon flag-icon-rw"></span> Rwanda</div>
+                    <div class="option" data-value="RE"><span class="flag-icon flag-icon-re"></span> Réunion</div>
+                    <div class="option" data-value="BL"><span class="flag-icon flag-icon-bl"></span> Saint Barthélemy</div>
+                    <div class="option" data-value="SH"><span class="flag-icon flag-icon-sh"></span> Saint Helena, Ascension and Tristan da Cunha</div>
+                    <div class="option" data-value="KN"><span class="flag-icon flag-icon-kn"></span> Saint Kitts and Nevis</div>
+                    <div class="option" data-value="LC"><span class="flag-icon flag-icon-lc"></span> Saint Lucia</div>
+                    <div class="option" data-value="MF"><span class="flag-icon flag-icon-mf"></span> Saint Martin (French part)</div>
+                    <div class="option" data-value="PM"><span class="flag-icon flag-icon-pm"></span> Saint Pierre and Miquelon</div>
+                    <div class="option" data-value="VC"><span class="flag-icon flag-icon-vc"></span> Saint Vincent and the Grenadines</div>
+                    <div class="option" data-value="WS"><span class="flag-icon flag-icon-ws"></span> Samoa</div>
+                    <div class="option" data-value="SM"><span class="flag-icon flag-icon-sm"></span> San Marino</div>
+                    <div class="option" data-value="ST"><span class="flag-icon flag-icon-st"></span> Sao Tome and Principe</div>
+                    <div class="option" data-value="SA"><span class="flag-icon flag-icon-sa"></span> Saudi Arabia</div>
+                    <div class="option" data-value="SN"><span class="flag-icon flag-icon-sn"></span> Senegal</div>
+                    <div class="option" data-value="RS"><span class="flag-icon flag-icon-rs"></span> Serbia</div>
+                    <div class="option" data-value="SC"><span class="flag-icon flag-icon-sc"></span> Seychelles</div>
+                    <div class="option" data-value="SL"><span class="flag-icon flag-icon-sl"></span> Sierra Leone</div>
+                    <div class="option" data-value="SG"><span class="flag-icon flag-icon-sg"></span> Singapore</div>
+                    <div class="option" data-value="SX"><span class="flag-icon flag-icon-sx"></span> Sint Maarten (Dutch part)</div>
+                    <div class="option" data-value="SK"><span class="flag-icon flag-icon-sk"></span> Slovakia</div>
+                    <div class="option" data-value="SI"><span class="flag-icon flag-icon-si"></span> Slovenia</div>
+                    <div class="option" data-value="SB"><span class="flag-icon flag-icon-sb"></span> Solomon Islands</div>
+                    <div class="option" data-value="SO"><span class="flag-icon flag-icon-so"></span> Somalia</div>
+                    <div class="option" data-value="ZA"><span class="flag-icon flag-icon-za"></span> South Africa</div>
+                    <div class="option" data-value="GS"><span class="flag-icon flag-icon-gs"></span> South Georgia and the South Sandwich Islands</div>
+                    <div class="option" data-value="SS"><span class="flag-icon flag-icon-ss"></span> South Sudan</div>
+                    <div class="option" data-value="ES"><span class="flag-icon flag-icon-es"></span> Spain</div>
+                    <div class="option" data-value="LK"><span class="flag-icon flag-icon-lk"></span> Sri Lanka</div>
+                    <div class="option" data-value="SD"><span class="flag-icon flag-icon-sd"></span> Sudan</div>
+                    <div class="option" data-value="SR"><span class="flag-icon flag-icon-sr"></span> Suriname</div>
+                    <div class="option" data-value="SJ"><span class="flag-icon flag-icon-sj"></span> Svalbard and Jan Mayen</div>
+                    <div class="option" data-value="SE"><span class="flag-icon flag-icon-se"></span> Sweden</div>
+                    <div class="option" data-value="CH"><span class="flag-icon flag-icon-ch"></span> Switzerland</div>
+                    <div class="option" data-value="SY"><span class="flag-icon flag-icon-sy"></span> Syrian Arab Republic</div>
+                    <div class="option" data-value="TW"><span class="flag-icon flag-icon-tw"></span> Taiwan, Province of China</div>
+                    <div class="option" data-value="TJ"><span class="flag-icon flag-icon-tj"></span> Tajikistan</div>
+                    <div class="option" data-value="TZ"><span class="flag-icon flag-icon-tz"></span> Tanzania, United Republic of</div>
+                    <div class="option" data-value="TH"><span class="flag-icon flag-icon-th"></span> Thailand</div>
+                    <div class="option" data-value="TL"><span class="flag-icon flag-icon-tl"></span> Timor-Leste</div>
+                    <div class="option" data-value="TG"><span class="flag-icon flag-icon-tg"></span> Togo</div>
+                    <div class="option" data-value="TK"><span class="flag-icon flag-icon-tk"></span> Tokelau</div>
+                    <div class="option" data-value="TO"><span class="flag-icon flag-icon-to"></span> Tonga</div>
+                    <div class="option" data-value="TT"><span class="flag-icon flag-icon-tt"></span> Trinidad and Tobago</div>
+                    <div class="option" data-value="TN"><span class="flag-icon flag-icon-tn"></span> Tunisia</div>
+                    <div class="option" data-value="TR"><span class="flag-icon flag-icon-tr"></span> Turkey</div>
+                    <div class="option" data-value="TM"><span class="flag-icon flag-icon-tm"></span> Turkmenistan</div>
+                    <div class="option" data-value="TC"><span class="flag-icon flag-icon-tc"></span> Turks and Caicos Islands</div>
+                    <div class="option" data-value="TV"><span class="flag-icon flag-icon-tv"></span> Tuvalu</div>
+                    <div class="option" data-value="UG"><span class="flag-icon flag-icon-ug"></span> Uganda</div>
+                    <div class="option" data-value="UA"><span class="flag-icon flag-icon-ua"></span> Ukraine</div>
+                    <div class="option" data-value="AE"><span class="flag-icon flag-icon-ae"></span> United Arab Emirates</div>
+                    <div class="option" data-value="GB"><span class="flag-icon flag-icon-gb"></span> United Kingdom</div>
+                    <div class="option" data-value="US"><span class="flag-icon flag-icon-us"></span> United States</div>
+                    <div class="option" data-value="UY"><span class="flag-icon flag-icon-uy"></span> Uruguay</div>
+                    <div class="option" data-value="UZ"><span class="flag-icon flag-icon-uz"></span> Uzbekistan</div>
+                    <div class="option" data-value="VU"><span class="flag-icon flag-icon-vu"></span> Vanuatu</div>
+                    <div class="option" data-value="VE"><span class="flag-icon flag-icon-ve"></span> Venezuela, Bolivarian Republic of</div>
+                    <div class="option" data-value="VN"><span class="flag-icon flag-icon-vn"></span> Vietnam</div>
+                    <div class="option" data-value="WF"><span class="flag-icon flag-icon-wf"></span> Wallis and Futuna</div>
+                    <div class="option" data-value="EH"><span class="flag-icon flag-icon-eh"></span> Western Sahara</div>
+                    <div class="option" data-value="YE"><span class="flag-icon flag-icon-ye"></span> Yemen</div>
+                    <div class="option" data-value="ZM"><span class="flag-icon flag-icon-zm"></span> Zambia</div>
+                    <div class="option" data-value="ZW"><span class="flag-icon flag-icon-zw"></span> Zimbabwe</div>
+                  </div>
+                </div>
+              </div>
+              <input type="text" id="user-input" placeholder="Enter phone number">
+              <button type="submit" id="check-btn" class="btn">Check</button>
+              <button type="button" id="clear-btn" class="btn">Clear</button>
+            </form>
+            <div id="results-div"></div>
+          </div>
+          <div class="form-img">
+            <img src="bg.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/google-libphonenumber/3.2.24/libphonenumber.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
