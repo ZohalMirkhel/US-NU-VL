@@ -1,0 +1,245 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:
+    'poppins',
+    sans-serif;
+}
+
+.login-form {
+  position: relative;
+  min-height: 100vh;
+  z-index: 0;
+  background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb, #a6c1ee, #d4fc79, #96e6a1);
+  background-size: 200% 200%;
+  animation: gradientAnimation 10s ease infinite;
+  padding: 30px;
+  justify-content: center;
+  display: grid;
+  grid-template-rows: 1fr auto 1fr;
+  align-items: center;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.login-form h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #fff;
+  font-family:
+    'poppins',
+    sans-serif;
+}
+
+.login-form h2 {
+  line-height: 40px;
+  margin-bottom: 5px;
+  font-size: 30px;
+  font-weight: 500;
+  color: #272346;
+  text-align: center;
+}
+
+.login-form .main {
+  position: relative;
+  display: flex;
+  margin: 30px 0;
+}
+
+.content {
+  flex-basis: 50%;
+  padding: 3em 3em;
+  background: #fff;
+  box-shadow: 2px 9px 49px -17px rgba(0, 0, 0, 0.1);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.form-img {
+  flex-basis: 50%;
+  background: #dfe5ea;
+  background-size: cover;
+  padding: 40px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  align-items: center;
+  display: grid;
+}
+
+.form-img img {
+  max-width: 100%;
+  height: 110%;
+}
+
+.btn,
+button,
+input,
+select {
+  border-radius: 35px;
+}
+
+.btn:hover {
+  color: #272346;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+.login-form form {
+  margin: 30px 0;
+}
+
+.login-form input {
+  outline: none;
+  margin-bottom: 15px;
+  font-stretch: 16px;
+  color: #999;
+  text-align: left;
+  padding: 14px 20px;
+  width: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+  border: none;
+  background: #f7fafc;
+  transition: 0.3s ease;
+}
+
+.login-form input:focus {
+  background: transparent;
+  border: 1px solid rgb(226, 174, 228);
+  box-shadow: 0 0 20px #fbc2eb;
+}
+
+.select-box {
+  position: relative;
+}
+
+.select {
+  outline: none;
+  margin-bottom: 10px;
+  font-stretch: 16px;
+  color: #999;
+  text-align: left;
+  padding: 14px 20px;
+  width: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 50px;
+  background: #f7fafc;
+  transition: 0.3s ease;
+}
+
+.options-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border-radius: 2%;
+  border: 1px solid #ccc;
+  z-index: 10;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.option {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: #f1f1f1;
+}
+
+.option .flag-icon {
+  margin-right: 10px;
+}
+
+#user-input {
+  margin-bottom: 10px;
+}
+
+#results-div {
+  margin-top: 10px;
+}
+
+.select-box::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  width: 8px;
+  height: 8px;
+  border-right: 1px solid rgb(124, 121, 121);
+  border-bottom: 1px solid rgb(124, 121, 121);
+  transform: rotate(45deg);
+  right: 30px;
+  top: 28%;
+  pointer-events: none;
+}
+
+.login-form button {
+  font-size: 18px;
+  color: #fff;
+  width: 100%;
+  margin-top: 15px;
+  background: rgb(226, 174, 228);
+  border: none;
+  padding: 14px 15px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+option {
+  margin: 30px;
+}
+
+@media (max-width: 736px) {
+  .login-form .main {
+    flex-direction: column;
+  }
+
+  .login-form form {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .form-img {
+    border-radius: 0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    order: 2;
+  }
+
+  .content {
+    order: 1;
+    border-radius: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+}
